@@ -52,21 +52,21 @@ public class WebSocketSamplerGui extends AbstractControllerGui {
             webSocketSamplerPanel.setServerPort(webSocketSamplerTestElement.getServerPort());
             webSocketSamplerPanel.setImplementation(webSocketSamplerTestElement.getImplementation());
             webSocketSamplerPanel.setProtocol(webSocketSamplerTestElement.getProtocol());
-            webSocketSamplerPanel.setContextPath(webSocketSamplerTestElement.getContextPath());
+//            webSocketSamplerPanel.setContextPath(webSocketSamplerTestElement.getContextPath());
             webSocketSamplerPanel.setContentEncoding(webSocketSamplerTestElement.getContentEncoding());
-            webSocketSamplerPanel.setRequestPayload(webSocketSamplerTestElement.getRequestPayload());
-            webSocketSamplerPanel.setResponseTimeout(webSocketSamplerTestElement.getResponseTimeout());
+//            webSocketSamplerPanel.setRequestPayload(webSocketSamplerTestElement.getRequestPayload());
+//            webSocketSamplerPanel.setResponseTimeout(webSocketSamplerTestElement.getResponseTimeout());
             webSocketSamplerPanel.setConnectionTimeout(webSocketSamplerTestElement.getConnectionTimeout());
             webSocketSamplerPanel.setIgnoreSslErrors(webSocketSamplerTestElement.isIgnoreSslErrors());
-            webSocketSamplerPanel.setStreamingConnection(webSocketSamplerTestElement.isStreamingConnection());
-            webSocketSamplerPanel.setConnectionId(webSocketSamplerTestElement.getConnectionId());
-            webSocketSamplerPanel.setResponsePattern(webSocketSamplerTestElement.getResponsePattern());
-            webSocketSamplerPanel.setCloseConncectionPattern(webSocketSamplerTestElement.getCloseConncectionPattern());
+//            webSocketSamplerPanel.setStreamingConnection(webSocketSamplerTestElement.isStreamingConnection());
+//            webSocketSamplerPanel.setConnectionId(webSocketSamplerTestElement.getConnectionId());
+//            webSocketSamplerPanel.setResponsePattern(webSocketSamplerTestElement.getResponsePattern());
+//            webSocketSamplerPanel.setCloseConncectionPattern(webSocketSamplerTestElement.getCloseConncectionPattern());
             webSocketSamplerPanel.setProxyAddress(webSocketSamplerTestElement.getProxyAddress());
             webSocketSamplerPanel.setProxyPassword(webSocketSamplerTestElement.getProxyPassword());
             webSocketSamplerPanel.setProxyPort(webSocketSamplerTestElement.getProxyPort());
             webSocketSamplerPanel.setProxyUsername(webSocketSamplerTestElement.getProxyUsername());
-            webSocketSamplerPanel.setMessageBacklog(webSocketSamplerTestElement.getMessageBacklog());
+//            webSocketSamplerPanel.setMessageBacklog(webSocketSamplerTestElement.getMessageBacklog());
 
             Arguments queryStringParameters = webSocketSamplerTestElement.getQueryStringParameters();
             if (queryStringParameters != null) {
@@ -91,21 +91,21 @@ public class WebSocketSamplerGui extends AbstractControllerGui {
             webSocketSamplerTestElement.setServerPort(webSocketSamplerPanel.getServerPort());
             webSocketSamplerTestElement.setImplementation(webSocketSamplerPanel.getImplementation());
             webSocketSamplerTestElement.setProtocol(webSocketSamplerPanel.getProtocol());
-            webSocketSamplerTestElement.setContextPath(webSocketSamplerPanel.getContextPath());
+//            webSocketSamplerTestElement.setContextPath(webSocketSamplerPanel.getContextPath());
             webSocketSamplerTestElement.setContentEncoding(webSocketSamplerPanel.getContentEncoding());
-            webSocketSamplerTestElement.setRequestPayload(webSocketSamplerPanel.getRequestPayload());
+//            webSocketSamplerTestElement.setRequestPayload(webSocketSamplerPanel.getRequestPayload());
             webSocketSamplerTestElement.setConnectionTimeout(webSocketSamplerPanel.getConnectionTimeout());
-            webSocketSamplerTestElement.setResponseTimeout(webSocketSamplerPanel.getResponseTimeout());
+//            webSocketSamplerTestElement.setResponseTimeout(webSocketSamplerPanel.getResponseTimeout());
             webSocketSamplerTestElement.setIgnoreSslErrors(webSocketSamplerPanel.isIgnoreSslErrors());
-            webSocketSamplerTestElement.setStreamingConnection(webSocketSamplerPanel.isStreamingConnection());
-            webSocketSamplerTestElement.setConnectionId(webSocketSamplerPanel.getConnectionId());
-            webSocketSamplerTestElement.setResponsePattern(webSocketSamplerPanel.getResponsePattern());
-            webSocketSamplerTestElement.setCloseConncectionPattern(webSocketSamplerPanel.getCloseConncectionPattern());
+//            webSocketSamplerTestElement.setStreamingConnection(webSocketSamplerPanel.isStreamingConnection());
+//            webSocketSamplerTestElement.setConnectionId(webSocketSamplerPanel.getConnectionId());
+//            webSocketSamplerTestElement.setResponsePattern(webSocketSamplerPanel.getResponsePattern());
+//            webSocketSamplerTestElement.setCloseConncectionPattern(webSocketSamplerPanel.getCloseConncectionPattern());
             webSocketSamplerTestElement.setProxyAddress(webSocketSamplerPanel.getProxyAddress());
             webSocketSamplerTestElement.setProxyPassword(webSocketSamplerPanel.getProxyPassword());
             webSocketSamplerTestElement.setProxyPort(webSocketSamplerPanel.getProxyPort());
             webSocketSamplerTestElement.setProxyUsername(webSocketSamplerPanel.getProxyUsername());
-            webSocketSamplerTestElement.setMessageBacklog(webSocketSamplerPanel.getMessageBacklog());
+//            webSocketSamplerTestElement.setMessageBacklog(webSocketSamplerPanel.getMessageBacklog());
 
             ArgumentsPanel queryStringParameters = webSocketSamplerPanel.getAttributePanel();
             if (queryStringParameters != null) {

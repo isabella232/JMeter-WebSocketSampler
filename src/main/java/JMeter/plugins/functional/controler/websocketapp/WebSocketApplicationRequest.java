@@ -4,8 +4,6 @@
  */
 package JMeter.plugins.functional.controler.websocketapp;
 
-import JMeter.plugins.functional.samplers.websocket.*;
-import java.awt.Color;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel;
 import org.apache.jorphan.logging.LoggingManager;
@@ -26,7 +24,7 @@ public class WebSocketApplicationRequest extends javax.swing.JPanel {
         initComponents();
 
         attributePanel = new HTTPArgumentsPanel();
-        querystringAttributesPanel.add(attributePanel);
+//        querystringAttributesPanel.add(attributePanel);
     }
 
     /**
@@ -154,117 +152,117 @@ public class WebSocketApplicationRequest extends javax.swing.JPanel {
     public void initFields() {
     }
 
-    public void setCloseConncectionPattern(String closeConncectionPattern) {
-        closeConncectionPatternTextField.setText(closeConncectionPattern);
-    }
-
-    public String getCloseConncectionPattern() {
-        return closeConncectionPatternTextField.getText();
-    }
-
-    public void setConnectionId(String connectionId) {
-        connectionIdTextField.setText(connectionId);
-    }
-
-    public String getConnectionId() {
-        return connectionIdTextField.getText();
-    }
-
-    public void setContentEncoding(String contentEncoding) {
-        contentEncodingTextField.setText(contentEncoding);
-    }
-
-    public String getContentEncoding() {
-        return contentEncodingTextField.getText();
-    }
-
-    public void setContextPath(String contextPath) {
-        contextPathTextField.setText(contextPath);
-    }
-
-    public String getContextPath() {
-        return contextPathTextField.getText();
-    }
-
-    public void setProtocol(String protocol) {
-        protocolTextField.setText(protocol);
-    }
-
-    public String getProtocol() {
-        return protocolTextField.getText();
-    }
-
-    public void setProxyAddress(String proxyAddress) {
-        proxyAddressTextField.setText(proxyAddress);
-    }
-
-    public String getProxyAddress() {
-        return proxyAddressTextField.getText();
-    }
-
-    public void setProxyPassword(String proxyPassword) {
-        proxyPasswordTextField.setText(proxyPassword);
-    }
-
-    public String getProxyPassword() {
-        return proxyPasswordTextField.getText();
-    }
-
-    public void setProxyPort(String proxyPort) {
-        proxyPortTextField.setText(proxyPort);
-    }
-
-    public String getProxyPort() {
-        return proxyPortTextField.getText();
-    }
-
-    public void setProxyUsername(String proxyUsername) {
-        proxyUsernameTextField.setText(proxyUsername);
-    }
-
-    public String getProxyUsername() {
-        return proxyUsernameTextField.getText();
-    }
-
-    public void setResponsePattern(String responsePattern) {
-        responsePatternTextField.setText(responsePattern);
-    }
-
-    public String getResponsePattern() {
-        return responsePatternTextField.getText();
-    }
-
-    public void setResponseTimeout(String responseTimeout) {
-        responseTimeoutTextField.setText(responseTimeout);
-    }
-
-    public String getResponseTimeout() {
-        return responseTimeoutTextField.getText();
-    }
-
-    public void setConnectionTimeout(String connectionTimeout) {
-        connectionTimeoutTextField.setText(connectionTimeout);
-    }
-
-    public String getConnectionTimeout() {
-        return connectionTimeoutTextField.getText();
-    }
-
-    public void setServerAddress(String serverAddress) {
-        serverAddressTextField.setText(serverAddress);
-    }
-
-    public String getServerAddress() {
-        return serverAddressTextField.getText();
-    }
-
-    public void setServerPort(String serverPort) {
-        serverPortTextField.setText(serverPort);
-    }
-
-    public String getServerPort() {
-        return serverPortTextField.getText();
-    }
+//    public void setCloseConncectionPattern(String closeConncectionPattern) {
+//        closeConncectionPatternTextField.setText(closeConncectionPattern);
+//    }
+//
+//    public String getCloseConncectionPattern() {
+//        return closeConncectionPatternTextField.getText();
+//    }
+//
+//    public void setConnectionId(String connectionId) {
+//        connectionIdTextField.setText(connectionId);
+//    }
+//
+//    public String getConnectionId() {
+//        return connectionIdTextField.getText();
+//    }
+//
+//    public void setContentEncoding(String contentEncoding) {
+//        contentEncodingTextField.setText(contentEncoding);
+//    }
+//
+//    public String getContentEncoding() {
+//        return contentEncodingTextField.getText();
+//    }
+//
+//    public void setContextPath(String contextPath) {
+//        contextPathTextField.setText(contextPath);
+//    }
+//
+//    public String getContextPath() {
+//        return contextPathTextField.getText();
+//    }
+//
+//    public void setProtocol(String protocol) {
+//        protocolTextField.setText(protocol);
+//    }
+//
+//    public String getProtocol() {
+//        return protocolTextField.getText();
+//    }
+//
+//    public void setProxyAddress(String proxyAddress) {
+//        proxyAddressTextField.setText(proxyAddress);
+//    }
+//
+//    public String getProxyAddress() {
+//        return proxyAddressTextField.getText();
+//    }
+//
+//    public void setProxyPassword(String proxyPassword) {
+//        proxyPasswordTextField.setText(proxyPassword);
+//    }
+//
+//    public String getProxyPassword() {
+//        return proxyPasswordTextField.getText();
+//    }
+//
+//    public void setProxyPort(String proxyPort) {
+//        proxyPortTextField.setText(proxyPort);
+//    }
+//
+//    public String getProxyPort() {
+//        return proxyPortTextField.getText();
+//    }
+//
+//    public void setProxyUsername(String proxyUsername) {
+//        proxyUsernameTextField.setText(proxyUsername);
+//    }
+//
+//    public String getProxyUsername() {
+//        return proxyUsernameTextField.getText();
+//    }
+//
+//    public void setResponsePattern(String responsePattern) {
+//        responsePatternTextField.setText(responsePattern);
+//    }
+//
+//    public String getResponsePattern() {
+//        return responsePatternTextField.getText();
+//    }
+//
+//    public void setResponseTimeout(String responseTimeout) {
+//        responseTimeoutTextField.setText(responseTimeout);
+//    }
+//
+//    public String getResponseTimeout() {
+//        return responseTimeoutTextField.getText();
+//    }
+//
+//    public void setConnectionTimeout(String connectionTimeout) {
+//        connectionTimeoutTextField.setText(connectionTimeout);
+//    }
+//
+//    public String getConnectionTimeout() {
+//        return connectionTimeoutTextField.getText();
+//    }
+//
+//    public void setServerAddress(String serverAddress) {
+//        serverAddressTextField.setText(serverAddress);
+//    }
+//
+//    public String getServerAddress() {
+//        return serverAddressTextField.getText();
+//    }
+//
+//    public void setServerPort(String serverPort) {
+//        serverPortTextField.setText(serverPort);
+//    }
+//
+//    public String getServerPort() {
+//        return serverPortTextField.getText();
+//    }
 
     public void setRequestPayload(String requestPayload) {
         requestPayloadEditorPane.setText(requestPayload);
@@ -274,37 +272,37 @@ public class WebSocketApplicationRequest extends javax.swing.JPanel {
         return requestPayloadEditorPane.getText();
     }
 
-    public void setStreamingConnection(Boolean streamingConnection) {
-        streamingConnectionCheckBox.setSelected(streamingConnection);
-    }
-
-    public Boolean isStreamingConnection() {
-        return streamingConnectionCheckBox.isSelected();
-    }
-
-    public void setIgnoreSslErrors(Boolean ignoreSslErrors) {
-        ignoreSslErrorsCheckBox.setSelected(ignoreSslErrors);
-    }
-
-    public Boolean isIgnoreSslErrors() {
-        return ignoreSslErrorsCheckBox.isSelected();
-    }
-
-    public void setImplementation(String implementation) {
-        implementationComboBox.setSelectedItem(implementation);
-    }
-
-    public String getImplementation() {
-        return (String) implementationComboBox.getSelectedItem();
-    }
-
-    public void setMessageBacklog(String messageBacklog) {
-        messageBacklogTextField.setText(messageBacklog);
-    }
-
-    public String getMessageBacklog() {
-        return messageBacklogTextField.getText();
-    }    
+//    public void setStreamingConnection(Boolean streamingConnection) {
+//        streamingConnectionCheckBox.setSelected(streamingConnection);
+//    }
+//
+//    public Boolean isStreamingConnection() {
+//        return streamingConnectionCheckBox.isSelected();
+//    }
+//
+//    public void setIgnoreSslErrors(Boolean ignoreSslErrors) {
+//        ignoreSslErrorsCheckBox.setSelected(ignoreSslErrors);
+//    }
+//
+//    public Boolean isIgnoreSslErrors() {
+//        return ignoreSslErrorsCheckBox.isSelected();
+//    }
+//
+//    public void setImplementation(String implementation) {
+//        implementationComboBox.setSelectedItem(implementation);
+//    }
+//
+//    public String getImplementation() {
+//        return (String) implementationComboBox.getSelectedItem();
+//    }
+//
+//    public void setMessageBacklog(String messageBacklog) {
+//        messageBacklogTextField.setText(messageBacklog);
+//    }
+//
+//    public String getMessageBacklog() {
+//        return messageBacklogTextField.getText();
+//    }    
 
     /**
      * @return the attributePanel

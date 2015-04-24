@@ -40,6 +40,10 @@ import org.eclipse.jetty.websocket.client.WebSocketClient;
 public class WebSocketSampler extends AbstractSampler implements TestStateListener {
     private static final Logger log = LoggingManager.getLoggerForClass();
     
+    public static int DEFAULT_CONNECTION_TIMEOUT = 20000; //20 sec
+    public static int DEFAULT_RESPONSE_TIMEOUT = 20000; //20 sec
+    public static int MESSAGE_BACKLOG_COUNT = 3;
+    
     private static final String ARG_VAL_SEP = "="; // $NON-NLS-1$
     private static final String QRY_SEP = "&"; // $NON-NLS-1$
     private static final String WS_PREFIX = "ws://"; // $NON-NLS-1$
@@ -59,22 +63,23 @@ public class WebSocketSampler extends AbstractSampler implements TestStateListen
         String connectionId = getThreadName() + getConnectionId();
         ServiceSocket socket;
         WebSocketClient webSocketClient;
-        if (isStreamingConnection()) {
-             if (connectionList.containsKey(connectionId)) {
-                 socket = connectionList.get(connectionId);
-                 socket.initialize();
-                 return socket;
-             } else {
-                socket = new ServiceSocket(this);
-                connectionList.put(connectionId, socket);
-             }
-        } else {
-            socket = new ServiceSocket(this);
-        }
 
         SslContextFactory sslContexFactory = new SslContextFactory();
         sslContexFactory.setTrustAll(isIgnoreSslErrors());
         webSocketClient = new WebSocketClient(sslContexFactory);
+        
+        if (isStreamingConnection()) {
+            if (connectionList.containsKey(connectionId)) {
+                socket = connectionList.get(connectionId);
+                socket.initialize();
+                return socket;
+            } else {
+               socket = new ServiceSocket(this, webSocketClient);
+               connectionList.put(connectionId, socket);
+            }
+       } else {
+           socket = new ServiceSocket(this,webSocketClient);
+       }
         
         webSocketClient.start();
         ClientUpgradeRequest request = new ClientUpgradeRequest();

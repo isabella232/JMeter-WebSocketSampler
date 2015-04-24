@@ -4,8 +4,6 @@
  */
 package JMeter.plugins.functional.controler.websocketapp;
 
-import JMeter.plugins.functional.samplers.websocket.*;
-import java.awt.Color;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel;
 import org.apache.jorphan.logging.LoggingManager;
@@ -26,7 +24,7 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
         initComponents();
 
         attributePanel = new HTTPArgumentsPanel();
-        querystringAttributesPanel.add(attributePanel);
+//        querystringAttributesPanel.add(attributePanel);
     }
 
     /**
@@ -287,21 +285,21 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
     public void initFields() {
     }
 
-    public void setCloseConncectionPattern(String closeConncectionPattern) {
-        closeConncectionPatternTextField.setText(closeConncectionPattern);
-    }
-
-    public String getCloseConncectionPattern() {
-        return closeConncectionPatternTextField.getText();
-    }
-
-    public void setConnectionId(String connectionId) {
-        connectionIdTextField.setText(connectionId);
-    }
-
-    public String getConnectionId() {
-        return connectionIdTextField.getText();
-    }
+//    public void setCloseConncectionPattern(String closeConncectionPattern) {
+//        closeConncectionPatternTextField.setText(closeConncectionPattern);
+//    }
+//
+//    public String getCloseConncectionPattern() {
+//        return closeConncectionPatternTextField.getText();
+//    }
+//
+//    public void setConnectionId(String connectionId) {
+//        connectionIdTextField.setText(connectionId);
+//    }
+//
+//    public String getConnectionId() {
+//        return connectionIdTextField.getText();
+//    }
 
     public void setContentEncoding(String contentEncoding) {
         contentEncodingTextField.setText(contentEncoding);
@@ -311,13 +309,13 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
         return contentEncodingTextField.getText();
     }
 
-    public void setContextPath(String contextPath) {
-        contextPathTextField.setText(contextPath);
-    }
-
-    public String getContextPath() {
-        return contextPathTextField.getText();
-    }
+//    public void setContextPath(String contextPath) {
+//        contextPathTextField.setText(contextPath);
+//    }
+//
+//    public String getContextPath() {
+//        return contextPathTextField.getText();
+//    }
 
     public void setProtocol(String protocol) {
         protocolTextField.setText(protocol);
@@ -359,21 +357,21 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
         return proxyUsernameTextField.getText();
     }
 
-    public void setResponsePattern(String responsePattern) {
-        responsePatternTextField.setText(responsePattern);
-    }
-
-    public String getResponsePattern() {
-        return responsePatternTextField.getText();
-    }
-
-    public void setResponseTimeout(String responseTimeout) {
-        responseTimeoutTextField.setText(responseTimeout);
-    }
-
-    public String getResponseTimeout() {
-        return responseTimeoutTextField.getText();
-    }
+//    public void setResponsePattern(String responsePattern) {
+//        responsePatternTextField.setText(responsePattern);
+//    }
+//
+//    public String getResponsePattern() {
+//        return responsePatternTextField.getText();
+//    }
+//
+//    public void setResponseTimeout(String responseTimeout) {
+//        responseTimeoutTextField.setText(responseTimeout);
+//    }
+//
+//    public String getResponseTimeout() {
+//        return responseTimeoutTextField.getText();
+//    }
 
     public void setConnectionTimeout(String connectionTimeout) {
         connectionTimeoutTextField.setText(connectionTimeout);
@@ -399,21 +397,21 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
         return serverPortTextField.getText();
     }
 
-    public void setRequestPayload(String requestPayload) {
-        requestPayloadEditorPane.setText(requestPayload);
-    }
-
-    public String getRequestPayload() {
-        return requestPayloadEditorPane.getText();
-    }
-
-    public void setStreamingConnection(Boolean streamingConnection) {
-        streamingConnectionCheckBox.setSelected(streamingConnection);
-    }
-
-    public Boolean isStreamingConnection() {
-        return streamingConnectionCheckBox.isSelected();
-    }
+//    public void setRequestPayload(String requestPayload) {
+//        requestPayloadEditorPane.setText(requestPayload);
+//    }
+//
+//    public String getRequestPayload() {
+//        return requestPayloadEditorPane.getText();
+//    }
+//
+//    public void setStreamingConnection(Boolean streamingConnection) {
+//        streamingConnectionCheckBox.setSelected(streamingConnection);
+//    }
+//
+//    public Boolean isStreamingConnection() {
+//        return streamingConnectionCheckBox.isSelected();
+//    }
 
     public void setIgnoreSslErrors(Boolean ignoreSslErrors) {
         ignoreSslErrorsCheckBox.setSelected(ignoreSslErrors);
@@ -431,13 +429,13 @@ public class WebSocketApplicationConfig extends javax.swing.JPanel {
         return (String) implementationComboBox.getSelectedItem();
     }
 
-    public void setMessageBacklog(String messageBacklog) {
-        messageBacklogTextField.setText(messageBacklog);
-    }
-
-    public String getMessageBacklog() {
-        return messageBacklogTextField.getText();
-    }    
+//    public void setMessageBacklog(String messageBacklog) {
+//        messageBacklogTextField.setText(messageBacklog);
+//    }
+//
+//    public String getMessageBacklog() {
+//        return messageBacklogTextField.getText();
+//    }    
 
     /**
      * @return the attributePanel
