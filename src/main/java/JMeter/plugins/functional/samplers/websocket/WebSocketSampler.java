@@ -5,6 +5,13 @@
 package JMeter.plugins.functional.samplers.websocket;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.jmeter.config.Argument;
 import org.apache.jmeter.config.Arguments;
@@ -15,19 +22,13 @@ import org.apache.jmeter.samplers.AbstractSampler;
 import org.apache.jmeter.samplers.Entry;
 import org.apache.jmeter.samplers.SampleResult;
 import org.apache.jmeter.testelement.TestElement;
-import org.apache.jmeter.testelement.property.*;
+import org.apache.jmeter.testelement.TestStateListener;
+import org.apache.jmeter.testelement.property.PropertyIterator;
+import org.apache.jmeter.testelement.property.StringProperty;
+import org.apache.jmeter.testelement.property.TestElementProperty;
 import org.apache.jorphan.logging.LoggingManager;
 import org.apache.jorphan.util.JOrphanUtils;
 import org.apache.log.Logger;
-
-
-import java.io.UnsupportedEncodingException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.TimeUnit;
-import org.apache.jmeter.testelement.TestStateListener;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
@@ -36,8 +37,12 @@ import org.eclipse.jetty.websocket.client.WebSocketClient;
  *
  * @author Maciej Zaleski
  */
-public class WebSocketSampler extends AbstractSampler implements TestStateListener {
-    public static int DEFAULT_CONNECTION_TIMEOUT = 20000; //20 sec
+public class WebSocketSampler extends AbstractSampler implements TestStateListener, SocketSampler {
+	
+    /** Default Serial Version ID. */
+	private static final long serialVersionUID = 1L;
+	
+	public static int DEFAULT_CONNECTION_TIMEOUT = 20000; //20 sec
     public static int DEFAULT_RESPONSE_TIMEOUT = 20000; //20 sec
     public static int MESSAGE_BACKLOG_COUNT = 3;
     

@@ -5,6 +5,7 @@
 package JMeter.plugins.functional.samplers.websocket;
 
 import java.awt.BorderLayout;
+
 import org.apache.jmeter.config.Arguments;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.samplers.gui.AbstractSamplerGui;
@@ -18,7 +19,10 @@ import org.apache.log.Logger;
  */
 public class WebSocketSamplerGui extends AbstractSamplerGui {
 
-    private WebSocketSamplerPanel webSocketSamplerPanel;
+    /** Default Serial Version ID. */
+	private static final long serialVersionUID = 1L;
+	
+	private WebSocketSamplerPanel webSocketSamplerPanel;
     private static final Logger log = LoggingManager.getLoggerForClass();
 
     public WebSocketSamplerGui() {

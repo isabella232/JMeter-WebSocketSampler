@@ -4,7 +4,6 @@
  */
 package JMeter.plugins.functional.samplers.websocket;
 
-import java.awt.Color;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel;
 import org.apache.jorphan.logging.LoggingManager;
@@ -15,7 +14,10 @@ import org.apache.log.Logger;
  * @author Maciej Zaleski
  */
 public class WebSocketSamplerPanel extends javax.swing.JPanel {
-    private static final Logger log = LoggingManager.getLoggerForClass();
+    /** Default Serial Version ID. */
+	private static final long serialVersionUID = 1L;
+	
+	private static final Logger log = LoggingManager.getLoggerForClass();
     private HTTPArgumentsPanel attributePanel;
 
     /**

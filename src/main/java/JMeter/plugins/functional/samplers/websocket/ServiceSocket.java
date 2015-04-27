@@ -10,10 +10,11 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import org.apache.log.Logger;
 import java.util.regex.Pattern;
+
 import org.apache.jmeter.engine.util.CompoundVariable;
 import org.apache.jorphan.logging.LoggingManager;
+import org.apache.log.Logger;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.StatusCode;
 import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
@@ -29,7 +30,7 @@ import org.eclipse.jetty.websocket.client.WebSocketClient;
 @WebSocket(maxTextMessageSize = 256 * 1024 * 1024)
 public class ServiceSocket {
 
-    protected final WebSocketSampler parent;
+    protected final SocketSampler parent;
     protected WebSocketClient client;
     private static final Logger log = LoggingManager.getLoggerForClass();
     protected Deque<String> responeBacklog = new LinkedList<String>();
@@ -45,7 +46,7 @@ public class ServiceSocket {
     protected Pattern disconnectExpression;
     protected boolean connected = false;
 
-    public ServiceSocket(WebSocketSampler parent, WebSocketClient client) {
+    public ServiceSocket(SocketSampler parent, WebSocketClient client) {
         this.parent = parent;
         this.client = client;
         
